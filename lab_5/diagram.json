@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Naomi Marinescu",
+  "editor": "wokwi",
+  "parts": [   { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+              { "type": "wokwi-buzzer","id": "buzzer", "top": 80, "left": 120 }
+  ],
+  
+  "connections": [
+    [ "uno:3", "buzzer:signal", "green", [ "v10", "h10" ] ],
+    [ "uno:GND", "buzzer:ground", "black", [ "v0" ] ],
+    [ "uno:13", "led:A", "red", [ "v0", "h-20" ] ],
+    [ "uno:GND", "led:C", "black", [ "v0" ] ]
+  ]
+}
